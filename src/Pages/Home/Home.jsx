@@ -1,9 +1,10 @@
 import React from 'react';
+import Reliable from './Reliable';
 
 const Home = () => {
     return (
         <div>
-            this is home page
+            <Reliable />
         </div>
     );
 };

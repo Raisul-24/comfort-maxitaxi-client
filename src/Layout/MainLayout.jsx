@@ -6,10 +6,10 @@ import Banner from '../components/Banner';
 
 const MainLayout = () => {
     return (
-        <div className='font-sans w-full min-h-screen'>
+        <div className='font-sans w-full min-h-screen bg-white'>
             <Navbar />
             <Banner />
-            <div className="container mx-auto text-blue-900"> 
+            <div className="container mx-auto"> 
             <Outlet></Outlet>
             </div>
             <Footer />

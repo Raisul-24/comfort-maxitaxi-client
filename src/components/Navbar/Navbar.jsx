@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaSliders } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { FaCar } from "react-icons/fa";
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
-
     const navbarRef = useRef();
-
     const toggleDropdown = (menu) => {
         setActiveDropdown(activeDropdown === menu ? null : menu);
     };
@@ -43,12 +43,14 @@ const Navbar = () => {
         <div ref={navbarRef} className="shadow-xl bg-white text-blue-950 relative z-50">
             {/* Small device buttons */}
             <div className="flex md:hidden gap-x-4 p-2 justify-center items-center">
-                <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                    Book Now
-                </button>
-                <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
-                    Login
-                </button>
+                <Link to='/' className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2">
+                    <FaPhoneVolume />
+                    <p className="">+61 478 674 464</p>
+                </Link>
+                <Link to='/' className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2">
+                    <FaCar />
+                    <p className="">Book Now</p>
+                </Link>
             </div>
 
             <div className="flex items-center justify-between max-w-7xl mx-auto px-4 py-3 lg:py-4">
@@ -80,11 +82,10 @@ const Navbar = () => {
                     <div className="relative">
                         <button
                             onClick={() => toggleDropdown("services")}
-                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${
-                                activeDropdown === "services"
+                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${activeDropdown === "services"
                                     ? "border-blue-950"
                                     : "border-transparent"
-                            }`}
+                                }`}
                         >
                             OUR SERVICES <span>{activeDropdown === "services" ? "▲" : "▼"}</span>
                         </button>
@@ -108,11 +109,10 @@ const Navbar = () => {
                     <div className="relative">
                         <button
                             onClick={() => toggleDropdown("about")}
-                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${
-                                activeDropdown === "about"
+                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${activeDropdown === "about"
                                     ? "border-blue-950"
                                     : "border-transparent"
-                            }`}
+                                }`}
                         >
                             ABOUT US <span>{activeDropdown === "about" ? "▲" : "▼"}</span>
                         </button>
@@ -142,21 +142,22 @@ const Navbar = () => {
                 </div>
 
                 {/* Desktop Buttons */}
-                <div className="hidden md:flex gap-2">
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                        Book Now
-                    </button>
-                    <button className="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">
-                        Login
-                    </button>
+                <div className="hidden md:flex gap-3">
+                    <Link to='/' className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2">
+                        <FaPhoneVolume />
+                        <p className="">+61 478 674 464</p>
+                    </Link>
+                    <Link to='/' className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2">
+                        <FaCar />
+                        <p className="">Book Now</p>
+                    </Link>
                 </div>
             </div>
 
             {/* Mobile Menu Slide */}
             <div
-                className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-50 ${
-                    mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
+                className={`lg:hidden fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform transition-transform duration-300 z-50 ${mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    }`}
             >
                 <div className="p-4">
                     <button

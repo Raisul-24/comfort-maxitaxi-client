@@ -61,7 +61,7 @@ const Banner = () => {
               className={`absolute inset-0 transition-colors duration-1000 ease-in-out`}
               style={{
                 backgroundColor:
-                  index === current ? "rgba(23, 37, 84, 0.5)" : "rgba(23, 37, 84, 0)",
+                  index === current ? "rgba(23, 37, 84, 0.6)" : "rgba(23, 37, 84, 0.2)",
               }}
             ></div>
 
