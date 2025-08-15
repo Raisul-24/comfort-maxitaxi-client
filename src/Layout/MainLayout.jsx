@@ -9,7 +9,7 @@ const MainLayout = () => {
         <div className='font-sans w-full min-h-screen bg-white'>
             <Navbar />
             <Banner />
-            <div className="container mx-auto"> 
+            <div className="max-w-7xl mx-auto"> 
             <Outlet></Outlet>
             </div>
             <Footer />

@@ -4,7 +4,7 @@ const Reliable = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="p-4 md:p-8 text-blue-950 ">
+    <div className="p-4 md:p-8 text-blue-950 container">
       {/* Heading */}
        <div className="text-center md:text-left mb-6">
           <h1 className="md:text-4xl lg:text-5xl font-extrabold tracking-wide">
