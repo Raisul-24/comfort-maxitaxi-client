@@ -1,19 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FaSliders } from "react-icons/fa6";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
 
-    const toggleDropdownMobile = (menu) => {
+    const navbarRef = useRef();
+
+    const toggleDropdown = (menu) => {
         setActiveDropdown(activeDropdown === menu ? null : menu);
     };
 
+    // Click outside to close dropdown
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setActiveDropdown(null);
+                setMobileMenuOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
+    const servicesMenu = [
+        { name: "Airport Pickup", path: "/airport-pickup" },
+        { name: "Baby Capsule", path: "/baby-capsule" },
+        { name: "Wedding Transport", path: "/wedding-transport" },
+        { name: "Wheelchair Accessible", path: "/wheelchair-accessible" },
+    ];
+
+    const aboutMenu = [
+        { name: "Blog", path: "/blog" },
+        { name: "Contact", path: "/contact" },
+        { name: "Why Choose Us", path: "/why-choose-us" },
+    ];
+
     return (
-        <div className="shadow-xl bg-white text-blue-950 font-sans">
+        <div ref={navbarRef} className="shadow-xl bg-white text-blue-950 relative z-50">
             {/* Small device buttons */}
-            <div className="flex lg:hidden gap-x-4 p-2 justify-center items-center">
+            <div className="flex md:hidden gap-x-4 p-2 justify-center items-center">
                 <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
                     Book Now
                 </button>
@@ -38,7 +67,7 @@ const Navbar = () => {
                     <img
                         className="w-7 md:w-16 h-7 md:h-16 rounded-full"
                         src="/maxitaxi.png"
-                        alt=""
+                        alt="Comfort MaxiTaxi"
                     />
                     <Link to="/" className="font-bold md:text-lg">
                         Comfort MaxiTaxi
@@ -48,53 +77,56 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <div className="hidden lg:flex items-center gap-8 font-bold text-lg">
                     {/* OUR SERVICES */}
-                    <div
-                        className="relative"
-                        onMouseEnter={() => setActiveDropdown("services")}
-                        onMouseLeave={() => setActiveDropdown(null)}
-                    >
+                    <div className="relative">
                         <button
-                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 ${
+                            onClick={() => toggleDropdown("services")}
+                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${
                                 activeDropdown === "services"
-                                    ? "border-blue-500"
-                                    : "border-transparent hover:border-blue-500"
+                                    ? "border-blue-950"
+                                    : "border-transparent"
                             }`}
                         >
-                            OUR SERVICES <span>▼</span>
+                            OUR SERVICES <span>{activeDropdown === "services" ? "▲" : "▼"}</span>
                         </button>
                         {activeDropdown === "services" && (
-                            <div className="absolute left-0 mt-2 bg-white shadow-lg p-4 rounded-md w-56 font-semibold z-50">
+                            <div className="absolute left-0 mt-2 bg-white shadow-lg p-4 rounded-md w-60 font-semibold z-50">
                                 <ul className="space-y-0">
-                                    <li className="border-b border-blue-950 py-1 hover:text-blue-600"><Link to="/">Airport Pickup</Link></li>
-                                    <li className="border-b border-blue-950 py-1 hover:text-blue-600"><Link to="/">Baby Capsule</Link></li>
-                                    <li className="border-b border-blue-950 py-1 hover:text-blue-600"><Link to="/">Wedding Transport</Link></li>
-                                    <li className="py-1 hover:text-blue-600"><Link to="/">Wheelchair Accessible</Link></li>
+                                    {servicesMenu.map((item, idx) => (
+                                        <li
+                                            key={idx}
+                                            className="border-b border-blue-950 p-1 hover:rounded-xl hover:text-white hover:bg-blue-950 hover:border-white"
+                                        >
+                                            <Link to={item.path}>{item.name}</Link>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         )}
                     </div>
 
                     {/* ABOUT US */}
-                    <div
-                        className="relative"
-                        onMouseEnter={() => setActiveDropdown("about")}
-                        onMouseLeave={() => setActiveDropdown(null)}
-                    >
+                    <div className="relative">
                         <button
-                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 ${
+                            onClick={() => toggleDropdown("about")}
+                            className={`pb-1 border-b-4 transition-all flex items-center gap-1 hover:border-blue-950 focus:border-blue-950 ${
                                 activeDropdown === "about"
-                                    ? "border-blue-500"
-                                    : "border-transparent hover:border-blue-500"
+                                    ? "border-blue-950"
+                                    : "border-transparent"
                             }`}
                         >
-                            ABOUT US <span>▼</span>
+                            ABOUT US <span>{activeDropdown === "about" ? "▲" : "▼"}</span>
                         </button>
                         {activeDropdown === "about" && (
                             <div className="absolute left-0 mt-2 bg-white shadow-lg p-4 rounded-md w-56 font-semibold z-50">
                                 <ul className="space-y-0">
-                                    <li className="border-b border-blue-950 py-1 hover:text-blue-600"><Link to="/">Blog</Link></li>
-                                    <li className="border-b border-blue-950 py-1 hover:text-blue-600"><Link to="/">Contact</Link></li>
-                                    <li className="py-1 hover:text-blue-600"><Link to="/">Why Choose Us</Link></li>
+                                    {aboutMenu.map((item, idx) => (
+                                        <li
+                                            key={idx}
+                                            className="border-b border-blue-950 p-1 hover:rounded-xl hover:text-white hover:bg-blue-950 hover:border-white"
+                                        >
+                                            <Link to={item.path}>{item.name}</Link>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         )}
@@ -102,15 +134,15 @@ const Navbar = () => {
 
                     {/* Taxi Fare Calculator */}
                     <Link
-                        to="/"
-                        className="pb-1 border-b-4 border-transparent hover:border-blue-500 transition-all"
+                        to="/taxiFareCalculator"
+                        className="pb-1 border-b-4 border-transparent hover:border-blue-950 focus:border-blue-950 transition-all"
                     >
                         Taxi Fare Calculator
                     </Link>
                 </div>
 
                 {/* Desktop Buttons */}
-                <div className="hidden lg:flex gap-2">
+                <div className="hidden md:flex gap-2">
                     <button className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
                         Book Now
                     </button>
@@ -136,36 +168,47 @@ const Navbar = () => {
                     <ul className="space-y-4">
                         <li>
                             <button
-                                onClick={() => toggleDropdownMobile("services")}
-                                className="w-full text-left font-semibold flex items-center gap-1"
+                                onClick={() => toggleDropdown("services")}
+                                className="w-full text-left font-semibold flex items-center gap-1 hover:text-blue-950"
                             >
-                                OUR SERVICES <span>▼</span>
+                                OUR SERVICES <span>{activeDropdown === "services" ? "▲" : "▼"}</span>
                             </button>
                             {activeDropdown === "services" && (
                                 <ul className="ml-4 mt-2 space-y-0">
-                                    <li className="border-b border-blue-950 py-1"><Link to="/">Airport Pickup</Link></li>
-                                    <li className="border-b border-blue-950 py-1"><Link to="/">Baby Capsule</Link></li>
-                                    <li className="border-b border-blue-950 py-1"><Link to="/">Wedding Transport</Link></li>
-                                    <li className="py-1"><Link to="/">Wheelchair Accessible</Link></li>
+                                    {servicesMenu.map((item, idx) => (
+                                        <li
+                                            key={idx}
+                                            className="border-b border-blue-950 py-1 hover:text-white hover:bg-blue-950"
+                                        >
+                                            <Link to={item.path}>{item.name}</Link>
+                                        </li>
+                                    ))}
                                 </ul>
                             )}
                         </li>
                         <li>
                             <button
-                                onClick={() => toggleDropdownMobile("about")}
-                                className="w-full text-left font-semibold flex items-center gap-1"
+                                onClick={() => toggleDropdown("about")}
+                                className="w-full text-left font-semibold flex items-center gap-1 hover:text-blue-950"
                             >
-                                ABOUT US <span>▼</span>
+                                ABOUT US <span>{activeDropdown === "about" ? "▲" : "▼"}</span>
                             </button>
                             {activeDropdown === "about" && (
                                 <ul className="ml-4 mt-2 space-y-0">
-                                    <li className="border-b border-blue-950 py-1"><Link to="/">Blog</Link></li>
-                                    <li className="border-b border-blue-950 py-1"><Link to="/">Contact</Link></li>
-                                    <li className="py-1"><Link to="/">Why Choose Us</Link></li>
+                                    {aboutMenu.map((item, idx) => (
+                                        <li
+                                            key={idx}
+                                            className="border-b border-blue-950 py-1 hover:text-white hover:bg-blue-950"
+                                        >
+                                            <Link to={item.path}>{item.name}</Link>
+                                        </li>
+                                    ))}
                                 </ul>
                             )}
                         </li>
-                        <li><Link to="/">Taxi Fare Calculator</Link></li>
+                        <li className="hover:text-blue-950">
+                            <Link to="/taxiFareCalculator">Taxi Fare Calculator</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
