@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../components/Footer/Footer';
-import Banner from '../components/Banner';
 import Loader from '../Pages/Looder';
+import ScrollSmooth from '../components/ScrollSmooth';
 
 const MainLayout = () => {
     const [loading, setLoading] = useState(true);
@@ -22,14 +22,13 @@ const MainLayout = () => {
     }
 
     return (
-        <div className='font-sans w-full min-h-screen bg-white'>
-            <Navbar />
-            <Banner />
-            <div className="max-w-7xl mx-auto">
-                <Outlet />
-            </div>
-            <Footer />
-        </div>
+       <div className='font-sans w-full min-h-screen bg-white pt-20'>
+    <Navbar />
+    <ScrollSmooth />
+    <Outlet />
+    <Footer />
+</div>
+
     );
 };
 

@@ -36,7 +36,7 @@ const Reliable = () => {
         {/* Right Card */}
         <div className="flex-1 bg-red-50 hover:bg-red-100 transition-all duration-300 rounded-xl shadow-md hover:shadow-xl transform hover:-translate-y-2 p-6 cursor-pointer">
           <p className="text-base md:text-lg mb-2">
-            Our fleet is modern, clean, and versatile — from sedans and station wagons to 3–13 seater maxi vans and wheelchair-accessible taxis. We handle airport transfers, wedding transport, corporate events, and group trips efficiently. All vehicles are fully insured, compliant with regulations, and driven by courteous, police-cleared professionals. Book online 24/7 with instant confirmation and a clear price quote.
+            Our fleet is modern, clean, and versatile — from sedans and station wagons to 1–12 seater maxi vans and wheelchair-accessible taxis. We handle airport transfers, wedding transport, corporate events, and group trips efficiently. All vehicles are fully insured, compliant with regulations, and driven by courteous, police-cleared professionals. Book online 24/7 with instant confirmation and a clear price quote.
           </p>
           <p className="text-base md:text-lg font-semibold">
             Comfort MaxiTaxi Perth — your trusted partner for reliable, flexible, and friendly transport.
