@@ -4,6 +4,7 @@ import { Outlet } from 'react-router';
 import Footer from '../components/Footer/Footer';
 import Loader from '../Pages/Looder';
 import ScrollSmooth from '../components/ScrollSmooth';
+import BookingForm from '../components/BookingForm';
 
 const MainLayout = () => {
     const [loading, setLoading] = useState(true);
@@ -26,6 +27,7 @@ const MainLayout = () => {
     <Navbar />
     <ScrollSmooth />
     <Outlet />
+    <BookingForm />
     <Footer />
 </div>
 
