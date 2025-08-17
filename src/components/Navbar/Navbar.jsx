@@ -36,6 +36,12 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
     { name: "Why Choose Us", path: "/why-choose-us" },
   ];
+    const scrollToBooking = () => {
+    const bookingSection = document.getElementById("booking-form");
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div
@@ -43,21 +49,21 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full shadow-xl bg-white text-blue-950 z-50"
     >
       {/* Small device buttons */}
-      <div className="flex md:hidden gap-x-4 p-2 justify-center items-center">
-        <Link
-          to="/"
-          className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
+      <div className="flex md:hidden gap-x-2 md:gap-x-4 p-2 justify-center items-center">
+        <btn 
+          onClick={() => window.location.href = "tel:+61478674464"}
+          className="w-36 md:w-44 btn md:px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center md:gap-2 text-xs md:text-base"
         >
           <FaPhoneVolume />
           <p>+61 478 674 464</p>
-        </Link>
-        <Link
-          to="/"
-          className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
+        </btn>
+        <btn
+        onClick={scrollToBooking}
+          className="w-36 md:w-44 btn md:px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center md:gap-2 text-xs md:text-base"
         >
           <FaCar />
           <p>Book Now</p>
-        </Link>
+        </btn>
       </div>
 
       <div className="flex items-center justify-between max-w-7xl mx-auto px-4 py-3 lg:py-4">
@@ -148,20 +154,20 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden md:flex gap-3">
-          <Link
-            to="/"
+          <btn
+            onClick={() => window.location.href = "tel:+61478674464"}
             className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
           >
             <FaPhoneVolume />
             <p>+61 478 674 464</p>
-          </Link>
-          <Link
-            to="/"
+          </btn>
+          <btn 
+            onClick={scrollToBooking}
             className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
           >
             <FaCar />
             <p>Book Now</p>
-          </Link>
+          </btn >
         </div>
       </div>
 
