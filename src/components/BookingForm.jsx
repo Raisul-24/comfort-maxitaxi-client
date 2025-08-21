@@ -2,6 +2,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 const BookingForm = () => {
   const {
@@ -33,9 +34,27 @@ const BookingForm = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="bg-gradient-to-r from-blue-100 to-red-100 rounded-xl shadow-xl max-w-6xl mx-auto p-6"
       >
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-blue-950 mb-2">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-blue-950">
           BOOK YOUR <span className="text-red-600">MAXI TAXI</span>
         </h2>
+                {/* React Type Animation */}
+        <div className="flex justify-center mb-2">
+          <TypeAnimation
+          sequence={[
+            "in Perth City 🚖", 2000,
+            "in Perth Airport ✈️", 2000,
+            "in Fremantle ⚓", 2000,
+            "in Cottesloe Beach 🏖️", 2000,
+            "in Joondalup 🏙️", 2000,
+            "in Rockingham 🌊", 2000,
+            "in Scarborough Beach 🌅", 2000,
+          ]}
+          wrapper="span"
+          speed={50}
+          repeat={Infinity}
+          className=" text-lg md:text-2xl font-semibold text-blue-950"
+        />
+        </div>
         <p className="text-center text-gray-600 mb-6 text-sm md:text-base">
           For your business or personal needs
         </p>
