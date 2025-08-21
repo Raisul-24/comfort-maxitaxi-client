@@ -114,7 +114,7 @@ const AirportTransfer = () => {
         className="relative py-24 px-4 text-center bg-cover bg-center"
         style={{ backgroundImage: `url(${b1})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-[#00247D]/90 to-[#00247D]/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#00240D]/90 to-[#00247D]/70"></div>
         <div className="relative z-10 max-w-3xl mx-auto text-white">
           <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg tracking-wide">
             Comfort MaxiTaxi – Perth Airport Transfers
@@ -273,30 +273,30 @@ const AirportTransfer = () => {
         <div className="flex flex-col md:flex-row items-center gap-8 w-full" >
           <div className="text-xs lg:text-base w-full md:w-2/3 space-y-4">
             <p className="text-gray-700 leading-relaxed mb-4">
-          Airport transfers can be daunting, so much so that people often look
-          for support from their families when arriving or departing from any
-          airport terminal. But reliable taxi services are changing this
-          scenario with their easy pick-up and drop services in the Perth
-          suburban area. Whether someone is arriving early morning or later in
-          the night, these fast taxi services can be trusted with hassle-free
-          transportation to and from Perth city.
-        </p>
-        <p className="text-gray-700 leading-relaxed mb-4">
-          We have two options for you for your transport from Perth airport to
-          Bunbury WA. Which is you can choose a 7 or 10 seater maxi taxi or
-          private airport transfer shuttle bus service. Some people use taxi
-          service and some private airport transfer bunbury option. Both
-          services are exactly same. You will get picked up in a nice and clean
-          airport minivan.
-        </p>
+              Airport transfers can be daunting, so much so that people often look
+              for support from their families when arriving or departing from any
+              airport terminal. But reliable taxi services are changing this
+              scenario with their easy pick-up and drop services in the Perth
+              suburban area. Whether someone is arriving early morning or later in
+              the night, these fast taxi services can be trusted with hassle-free
+              transportation to and from Perth city.
+            </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              We have two options for you for your transport from Perth airport to
+              Bunbury WA. Which is you can choose a 7 or 10 seater maxi taxi or
+              private airport transfer shuttle bus service. Some people use taxi
+              service and some private airport transfer bunbury option. Both
+              services are exactly same. You will get picked up in a nice and clean
+              airport minivan.
+            </p>
           </div>
           <div className="w-full md:w-1/3 flex justify-center items-center">
-  <img
-    src="/images/taxi.jpg"
-    className="w-48 h-48 md:w-64 md:h-64 shadow-xl rounded-full border-4 border-blue-900 object-cover"
-    alt="Taxi"
-  />
-</div>
+            <img
+              src="/images/taxi.jpg"
+              className="w-48 h-48 md:w-64 md:h-64 shadow-xl rounded-full border-4 border-blue-900 object-cover"
+              alt="Taxi"
+            />
+          </div>
 
         </div>
       </div>
