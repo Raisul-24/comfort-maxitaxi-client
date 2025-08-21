@@ -7,6 +7,7 @@ import MainLayout from './Layout/MainLayout.jsx';
 import Home from './Pages/Home/Home.jsx';
 import AirportTransfer from './Pages/AirportTransfer.jsx';
 import BabyCapsule from './Pages/BabyCapsule.jsx';
+import WeddingTransport from './Pages/WeddingTransport.jsx';
  
 
 const router = createBrowserRouter([
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/baby-capsule",
         element: <BabyCapsule />,
-      }
+      },
+      {
+        path: "/wedding-transport",
+        element: <WeddingTransport />,
+      },
     ]
   },
 ]);
