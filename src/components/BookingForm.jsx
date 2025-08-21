@@ -18,7 +18,7 @@ const BookingForm = () => {
   };
 
   const inputClasses =
-    "mt-1 w-full px-4 py-2 border rounded-lg transition outline-none text-gray-900 placeholder-gray-500 " +
+    "mt-1 w-full px-4 py-2 border rounded-lg transition outline-none text-gray-900" +
     "focus:border-transparent focus:ring-2 focus:ring-offset-1 focus:ring-blue-500 focus:animate-pulse focus:bg-gradient-to-r focus:from-red-50 focus:to-blue-50";
 
   return (
@@ -31,17 +31,17 @@ const BookingForm = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-gradient-to-r from-blue-100 to-red-100 rounded-xl shadow-xl w-[95%] sm:w-[90%] md:w-[80%] lg:w-[60%] p-6 sm:p-8"
+        className="bg-gradient-to-r from-blue-100 to-red-100 rounded-xl shadow-xl max-w-6xl mx-auto p-6"
       >
-        <h2 className="text-2xl sm:text-3xl font-bold text-center text-blue-950 mb-2">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-blue-950 mb-2">
           BOOK YOUR <span className="text-red-600">MAXI TAXI</span>
         </h2>
-        <p className="text-center text-gray-600 mb-6 text-sm sm:text-base">
+        <p className="text-center text-gray-600 mb-6 text-sm md:text-base">
           For your business or personal needs
         </p>
 
         {/* Grid Fields */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-blue-950">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-blue-950">
           <div>
             <label className="text-sm font-medium">Name</label>
             <input
@@ -54,7 +54,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Phone</label>
+            <label className="text-sm font-medium">Phone Number</label>
             <input
               type="tel"
               {...register("phone", { required: "Phone number is required" })}
@@ -79,7 +79,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Date</label>
+            <label className="text-sm font-medium">Date of Event</label>
             <input
               type="date"
               {...register("date", { required: "Date is required" })}
@@ -90,7 +90,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Time</label>
+            <label className="text-sm font-medium">Pick Up Time</label>
             <input
               type="time"
               {...register("time", { required: "Time is required" })}
@@ -100,7 +100,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Passengers</label>
+            <label className="text-sm font-medium">Number of Passengers</label>
             <input
               type="number"
               {...register("passengers", { required: "Required", min: 1 })}
@@ -113,7 +113,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Pickup</label>
+            <label className="text-sm font-medium">Pickup Place</label>
             <input
               type="text"
               {...register("pickup", { required: "Pickup is required" })}
@@ -124,7 +124,7 @@ const BookingForm = () => {
           </div>
 
           <div>
-            <label className="text-sm font-medium">Dropoff</label>
+            <label className="text-sm font-medium">Dropoff Place</label>
             <input
               type="text"
               {...register("dropoff", { required: "Dropoff is required" })}
@@ -136,13 +136,13 @@ const BookingForm = () => {
 
           <div>
             <label className="text-sm font-medium">
-              Flight No. <span className="text-xs">(Optional)</span>
+              Flight Number <span className="text-xs">(Optional)</span>
             </label>
             <input
               type="text"
               {...register("flight")}
               className={inputClasses}
-              placeholder="Optional"
+              placeholder="Flight number"
             />
           </div>
         </div>
