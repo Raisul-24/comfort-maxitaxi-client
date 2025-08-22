@@ -1,6 +1,7 @@
 import React from "react";
 import { FaTaxi, FaCheckCircle, FaUserTie, FaClock } from "react-icons/fa";
 import b2 from "/images/b2.jpeg";
+import { FaPhoneVolume } from "react-icons/fa6";
 
 const BabyCapsuleTaxi = () => {
     const services = [
@@ -134,16 +135,33 @@ const BabyCapsuleTaxi = () => {
                 </div>
             </div>
             {/* Booking Info Section */}
-            <div className="py-16">
-                <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#00247D] mb-6">
-                        Book Your Baby-Friendly Taxi Today
-                    </h2>
-                    <p className="text-gray-700 text-sm md:text-base leading-relaxed max-w-3xl mx-auto">
-                        Simply let us know your pick-up location, time, number of passengers, and the age of your child. Maxi Taxi Perth will provide a suitable taxi with the right baby capsule, toddler seat or booster, ensuring your little one travels safely and comfortably.
-                    </p>
-                </div>
-            </div>
+            <div className="hero max-w-7xl mx-auto py-16 px-4">
+                            <div className="hero-content flex-col md:flex-row-reverse">
+                                <img
+                                    src="/images/b2.jpeg"
+                                    className="w-full md:w-60 lg:w-96 rounded-lg shadow-2xl"
+                                />
+                                <div className="flex flex-col items-center">
+                                    <h2 className="text-2xl lg:text-4xl font-bold text-[#00247D] mb-6">
+                                        Book Your Baby-Friendly Taxi Today
+                                    </h2>
+                                    <p className="text-gray-700 text-sm md:text-base mb-8 leading-relaxed">
+                                        Simply let us know your pick-up location, time, number of passengers, and the age of your child. Maxi Taxi Perth will provide a suitable taxi with the right baby capsule, toddler seat or booster, ensuring your little one travels safely and comfortably.
+                                    </p>
+                                    <btn
+                                        onClick={() => window.location.href = "tel:+61478674464"}
+                                        className="w-60 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
+                                    >
+                                        <FaPhoneVolume />
+                                        <p>Call Now to Book</p>
+                                    </btn>
+                                    <p className="mt-4 text-gray-700 text-xs md:text-sm">
+                                        Or contact us via email for a customised wedding transport quote.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
             {/* FAQ Section */}
             <div className="py-16 px-4 bg-gradient-to-r from-[#00247D]/10 via-white to-[#FF0000]/10">
                 <div className="max-w-7xl mx-auto">
