@@ -36,9 +36,6 @@ const WeddingTransport = () => {
         { name: "Chauffeur Service", img: "https://i.ibb.co.com/C31jzQf9/chauffer.jpg" },
     ];
 
-
-
-
     const faqs = [
         { q: "Can I book wedding transport for 200 guests?", a: "Yes, Maxi Taxi Perth can provide taxis and maxi taxis for large weddings up to 200 people." },
         { q: "Can vehicles be decorated for weddings?", a: "Absolutely. We can decorate taxis and maxi taxis with ribbons and other festive touches." },
@@ -64,6 +61,90 @@ const WeddingTransport = () => {
                         Organise transport for your guests between venues and enjoy the day knowing all transfers are taken care of. Affordable, reliable, and professional wedding transportation in Perth.
                     </p>
                 </div>
+            </div>
+
+            {/* Wedding Transfers Section */}
+            <div className="py-6 ">
+                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                    {/* Heading */}
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-12">
+                        Wedding Transport Perth
+                    </h2>
+
+                    <div className="grid md:grid-cols-2 gap-4 md:gap-12 items-center">
+                        {/* Left Side - Text */}
+                        <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <p>
+                                Your wedding day deserves nothing less than perfection, and{" "}
+                                <span className="font-semibold text-blue-900">
+                                    Perth Comfort MaxiTaxi
+                                </span>{" "}
+                                is here to ensure your transport is seamless, stress-free, and
+                                beautifully organised. We provide{" "}
+                                <span className="font-semibold text-red-700">
+                                    punctual, reliable, and elegant
+                                </span>{" "}
+                                wedding transfers, so you and your guests arrive in comfort and style.
+                            </p>
+
+                            <p>
+                                Whether you need a{" "}
+                                <span className="font-semibold text-blue-900">7 or 10-seater maxi taxi</span>{" "}
+                                for your bridal party, or a private shuttle bus for guests, we have
+                                the perfect solution. Our vehicles guarantee{" "}
+                                <span className="font-semibold text-red-700">
+                                    spacious seating, air-conditioning, and professional service
+                                </span>
+                                , ensuring everyone enjoys a smooth ride on your special day.
+                            </p>
+                        </div>
+
+                        {/* Right Side - Image */}
+                        <div className="relative w-full flex justify-center">
+                            <img
+                                src={weddingHero}
+                                alt="Wedding maxi taxi in Perth"
+                                className="w-full max-w-lg h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-lg border-4 border-blue-950"
+                            />
+                            {/* Secondary Small Image */}
+                            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-6 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36">
+                                <img
+                                    src="/images/wedding.jpg"
+                                    alt="Comfortable wedding transport Perth"
+                                    className="w-full h-full object-cover rounded-xl shadow-md border-4 border-red-600"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Extra Info Section */}
+                    <div className="mt-16 bg-blue-50 border-l-4 border-red-600 rounded-lg p-4 md:p-8 shadow-md text-xs md:text-base">
+                        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+                            Perth Wedding Transfers
+                        </h3>
+                        <p className="text-gray-700 mb-4">
+                            From the ceremony to the reception, and even late-night guest drop-offs,
+                            our wedding transport service makes sure every detail is covered.{" "}
+                            <span className="font-semibold text-blue-900">Perth Comfort MaxiTaxi</span>{" "}
+                            offers flexible packages to suit your timeline, bridal party, and guests.
+                        </p>
+                        <p className="text-gray-700">
+                            With{" "}
+                            <span className="font-semibold text-red-700">professional drivers,
+                                reliable scheduling, and beautifully presented vehicles</span>,
+                            you can focus on making memories while we take care of the journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* Intro Section */}
+            <div className="max-w-6xl mx-auto px-4 py-6 md:py-16 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold text-[#00247D] mb-6">
+                    Why Choose Maxi Taxi Perth for Wedding Transport?       
+                </h2>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                    We understand that your wedding day is one of the most important days of your life. That's why we offer a dedicated wedding transport service that ensures your guests travel safely, comfortably, and on time. Our professional drivers are trained to provide the highest level of service, making sure your wedding transport is as special as the day itself.</p>
             </div>
 
             {/* Services Section */}

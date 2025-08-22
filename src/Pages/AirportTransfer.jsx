@@ -131,7 +131,8 @@ const AirportTransfer = () => {
         </div>
       </div>
 
-      <div className="py-6 bg-amber-50">
+      {/* Airport Transfers Section */}
+      <div className="py-6 ">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-12">
@@ -140,39 +141,43 @@ const AirportTransfer = () => {
 
           <div className="grid md:grid-cols-2 gap-4 md:gap-12 items-center">
             {/* Left Side - Text */}
-            <div className="space-y-6 text-gray-700 text-sm md:text-base">
+            <div className="space-y-6 text-gray-700 text-xs md:text-base">
               <p>
                 Travelling to and from the airport can sometimes feel stressful,
                 especially when flights arrive late at night or early in the
-                morning. Reliable taxi and transfer services in Perth are changing
-                this by offering convenient pick-up and drop-off options across
-                the city and suburbs. No matter the time of day, these services
-                provide safe, comfortable, and hassle-free transportation to and
-                from Perth Airport.
+                morning. <span className="font-semibold text-blue-900">With our reliable
+                  Perth airport transfer services</span>, you never have to worry about
+                delays, safety, or last-minute arrangements. We provide{" "}
+                <span className="font-semibold text-red-700">24/7 availability</span> to
+                make sure you and your family always reach your destination on time.
               </p>
 
               <p>
                 For passengers heading to{" "}
                 <span className="font-semibold text-blue-900">Bunbury WA</span>, we
-                offer two great transfer options: a spacious 7 or 10-seater maxi
-                taxi or a private airport shuttle bus. Both options provide the
-                same level of comfort and convenience, ensuring you’re collected
-                in a clean, well-maintained minivan for a smooth journey.
+                offer two excellent transfer options: a spacious{" "}
+                <span className="font-semibold text-blue-900">7 or 10-seater maxi taxi</span>{" "}
+                or a private airport shuttle bus. Both options guarantee{" "}
+                <span className="font-semibold text-red-700">comfort, cleanliness, and
+                  professional service</span>, so you can relax and enjoy a smooth ride in
+                our modern, well-maintained vehicles.
               </p>
             </div>
 
+
             {/* Right Side - Image */}
-            <div className="relative">
+            <div className="relative w-full flex justify-center">
               <img
                 src={taxiImg}
-                alt="Taxi transfer in Perth"
-                className="rounded-2xl shadow-lg border-4 border-blue-900 "
+                alt="Baby capsule taxi in Perth"
+                className="w-full max-w-lg h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-lg border-4 border-blue-950"
               />
-              <div className="absolute -bottom-6 -left-3 md:-left-6 w-32 h-32">
+              {/* Secondary Small Image */}
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-6 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36">
                 <img
                   src={airportImg}
-                  alt="Perth Airport"
-                  className="rounded-xl shadow-md border-4 border-red-600"
+                  alt="Comfortable baby capsule in taxi"
+                  className="w-full h-full object-cover rounded-xl shadow-md border-4 border-red-600"
                 />
               </div>
             </div>

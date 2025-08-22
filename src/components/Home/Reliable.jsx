@@ -6,11 +6,11 @@ const Reliable = () => {
   return (
     <div className="p-4 md:p-8 text-blue-950 container">
       {/* Heading */}
-       <div className="text-center md:text-left mb-6">
-          <h1 className="md:text-4xl lg:text-5xl font-extrabold tracking-wide">
+       <div className="text-center mb-6">
+          <h1 className="text-2xl md:text-4xl font-extrabold tracking-wide">
             Reliable & Flexible Maxi Taxi Services in Perth
           </h1>
-          <h5 className="md:text-2xl lg:text-3xl font-semibold mt-2 text-red-600">
+          <h5 className="md:text-2xl font-semibold mt-2 text-red-600">
             Comfort MaxiTaxi Perth
           </h5>
         </div>

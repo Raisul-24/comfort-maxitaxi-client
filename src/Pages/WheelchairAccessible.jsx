@@ -35,6 +35,91 @@ const WheelchairAccessible = () => {
                     </p>
                 </div>
             </div>
+            {/* Wheelchair Accessible Taxi Service */}
+            <div className="py-6">
+                <div className="max-w-7xl mx-auto px-4 md:px-8">
+                    {/* Heading */}
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-12">
+                        Wheelchair Accessible Taxi Service Perth
+                    </h2>
+
+                    <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                        {/* Left Side - Image */}
+                        <div className="relative w-full flex justify-center">
+                            <img
+                                src="/images/wheelchair.jpg"
+                                alt="Wheelchair accessible taxi in Perth"
+                                className="w-full max-w-lg h-64 sm:h-72 md:h-80 lg:h-96 object-cover rounded-2xl shadow-lg border-4 border-blue-950"
+                            />
+                            {/* Secondary Small Image */}
+                            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 md:translate-x-0 md:-left-6 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36">
+                                <img
+                                    src={assistImg}
+                                    alt="Accessible ramp taxi Perth"
+                                    className="w-full h-full object-cover rounded-xl shadow-md border-4 border-red-600"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Right Side - Text */}
+                        <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <p>
+                                Getting around Perth should be easy and accessible for everyone. At{" "}
+                                <span className="font-semibold text-blue-950">Perth Comfort MaxiTaxi</span>,
+                                we proudly provide{" "}
+                                <span className="font-semibold text-red-700">wheelchair accessible taxis</span>
+                                that ensure safe, comfortable, and convenient travel for all passengers.
+                            </p>
+
+                            <p>
+                                Our vehicles are equipped with{" "}
+                                <span className="font-semibold text-blue-900">
+                                    ramps and secure wheelchair restraints
+                                </span>{" "}
+                                to make boarding simple and travel secure. Whether you use a manual or
+                                electric wheelchair, our professional drivers assist you with care and
+                                respect every step of the way.
+                            </p>
+
+                            <p>
+                                From{" "}
+                                <span className="font-semibold text-blue-900">
+                                    hospital visits, airport transfers, events, or daily trips
+                                </span>
+                                , our wheelchair taxis are designed to give you freedom of travel and
+                                peace of mind across Perth.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Extra Info Section */}
+                    <div className="mt-16 bg-blue-50 border-l-4 border-red-600 rounded-lg p-4 md:p-8 shadow-md text-xs md:text-base">
+                        <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+                            Why Choose Our Wheelchair Accessible Taxis?
+                        </h3>
+                        <p className="text-gray-700 mb-4">
+                            Accessibility and comfort are at the heart of our service. Our{" "}
+                            <span className="font-semibold text-blue-900">wheelchair taxis in Perth</span>
+                            are fitted with reliable ramps, restraints, and extra space to ensure
+                            passengers travel safely and comfortably.
+                        </p>
+                        <p className="text-gray-700 mb-4">
+                            Whether you’re heading to the{" "}
+                            <span className="font-semibold">airport</span>,
+                            <span className="font-semibold"> hospital</span>, or attending a{" "}
+                            <span className="font-semibold">special event</span>, our trained and
+                            friendly drivers provide full assistance with boarding, luggage, and
+                            ensuring your wheelchair is secure for the journey.
+                        </p>
+                        <p className="text-gray-700">
+                            Choosing{" "}
+                            <span className="font-semibold text-blue-900">Perth Comfort MaxiTaxi</span>
+                            means choosing independence, reliability, and a service that truly cares
+                            about your accessibility needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
             {/* Intro */}
             <div className="max-w-6xl mx-auto px-4 py-16 text-center">
