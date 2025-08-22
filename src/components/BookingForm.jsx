@@ -25,7 +25,7 @@ const BookingForm = () => {
   return (
     <div
       id="booking-form"
-      className="relative flex justify-center items-center py-12 bg-[url('/images/taxi1.jpg')] bg-cover bg-center scroll-mt-24"
+      className="relative flex justify-center items-center py-12 bg-[url('/images/taxi1.jpg')] min-h-screen bg-cover bg-center scroll-mt-24"
     >
       <motion.form
         initial={{ opacity: 0, y: 40 }}
