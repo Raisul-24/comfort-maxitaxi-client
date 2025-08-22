@@ -3,6 +3,7 @@ import Reliable from '../../components/Home/Reliable';
 import WhyChooseUs from '../../components/Home/WhyChooseUs';
 import Banner from '../../components/Banner';
 import Services from '../../components/Home/Services';
+import Testimonial from '../../components/Home/Testimonial';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
                 <Services />
             </div>
             <WhyChooseUs />
+            <Testimonial />
         </div>
     );
 };
