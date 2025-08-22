@@ -25,7 +25,7 @@ const BookingForm = () => {
   return (
     <div
       id="booking-form"
-      className="relative flex justify-center items-center py-12 bg-[url('/images/taxi1.jpg')] bg-cover bg-center scroll-mt-24"
+      className="relative flex justify-center items-center py-12 bg-[url('/images/taxi1.jpg')] min-h-screen bg-cover bg-center scroll-mt-24"
     >
       <motion.form
         initial={{ opacity: 0, y: 40 }}
@@ -49,14 +49,15 @@ const BookingForm = () => {
             "in Rockingham 🌊", 2000,
             "in Scarborough Beach 🌅", 2000,
           ]}
-          wrapper="span"
-          speed={50}
-          repeat={Infinity}
+            wrapper="span"
+            speed={60}
+            repeat={Infinity}
+            cursor={true}
           className=" text-lg md:text-2xl font-semibold text-blue-950"
         />
         </div>
-        <p className="text-center text-gray-600 mb-6 text-sm md:text-base">
-          For your business or personal needs
+        <p className="text-gray-700 text-center text-sm md:text-base mb-8 leading-relaxed mt-4">
+          Maxi Taxi Perth provides reliable transport for weddings, events, airport transfers, and everyday travel across all major Perth areas.
         </p>
 
         {/* Grid Fields */}
