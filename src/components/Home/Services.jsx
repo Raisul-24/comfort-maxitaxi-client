@@ -7,7 +7,7 @@ const Services = () => {
             <h2 className='text-2xl md:text-4xl font-extrabold tracking-wide text-blue-950 text-center mb-8'>
                 Our Services
             </h2>
-            <p className='text-gray-700 text-base md:text-lg leading-relaxed mb
+            <p className='text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed mb
                 -8'>
                 At Comfort Maxi Taxi, we offer a wide range of services to meet your transportation needs in Perth. Whether you need a ride to the airport, a comfortable vehicle for your family, or specialized transport for events, we have you covered. Our fleet includes maxi taxis, wheelchair accessible vehicles, and baby capsule-equipped cars to ensure a safe and pleasant journey for everyone.
             </p>
@@ -18,7 +18,7 @@ const Services = () => {
                     <div className="max-w-7xl mx-auto px-4 md:px-8">
                         <div className="grid md:grid-cols-2 gap-4 md:gap-12 items-center">
                             {/* Left Side - Text */}
-                            <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <div className="space-y-6 text-gray-700 text-xs lg:text-base">
                                 <h2 className="text-xl md:text-2xl font-bold text-blue-950 mb-4">
                                     Perth Airport Transfers
                                 </h2>
@@ -62,7 +62,7 @@ const Services = () => {
                     <div className="max-w-7xl mx-auto px-4 md:px-8">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                             {/* Left Side - Image */}
-                            <div className="relative w-full flex justify-center">
+                            <div className="relative w-full flex justify-center order-2 md:order-1">
 
                                 <img
                                     src="/images/babycapsule.jpg"
@@ -79,7 +79,7 @@ const Services = () => {
                                 </div>
                             </div>
                             {/* Right Side - Text */}
-                            <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <div className="space-y-6 text-gray-700 text-xs lg:text-base order-1 md:order-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-blue-950 mb-4">
                                     Baby Capsule Taxis in Perth
                                 </h2>
@@ -109,7 +109,7 @@ const Services = () => {
                     <div className="max-w-7xl mx-auto px-4 md:px-8">
                         <div className="grid md:grid-cols-2 gap-4 md:gap-12 items-center">
                             {/* Left Side - Text */}
-                            <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <div className="space-y-6 text-gray-700 text-xs lg:text-base">
                                 <h2 className="text-xl md:text-2xl font-bold text-blue-950 mb-4">
                                     Wedding Transport in Perth
                                 </h2>
@@ -150,7 +150,7 @@ const Services = () => {
                     <div className="max-w-7xl mx-auto px-4 md:px-8">
                         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                             {/* Left Side - Image */}
-                            <div className="relative w-full flex justify-center">
+                            <div className="relative w-full flex justify-center order-2 md:order-1">
                                 <img
                                     src="/images/wheelchair.jpg"
                                     alt="Wheelchair accessible taxi in Perth"
@@ -166,7 +166,7 @@ const Services = () => {
                                 </div>
                             </div>
                             {/* Right Side - Text */}
-                            <div className="space-y-6 text-gray-700 text-xs md:text-base">
+                            <div className="space-y-6 text-gray-700 text-xs lg:text-base order-1 md:order-2">
                                 <h2 className="text-xl md:text-2xl font-bold text-blue-950 mb-4">
                                     Wheelchair Accessible Taxis in Perth
                                 </h2>
