@@ -73,7 +73,7 @@ const WheelchairAccessible = () => {
                     </div>
                 </div>
                 <div className="bg-white rounded-2xl shadow-md overflow-hidden">
-                    <img src={wheelchairImg} alt="Wheelchair Taxi Perth" className="w-full h-48 object-cover" />
+                    <img src="/images/wheelchair.jpg" alt="Wheelchair Taxi Perth" className="w-full h-48 object-cover" />
                     <div className="p-6 text-center">
                         <FaCarSide className="text-4xl text-red-600 mx-auto mb-3" />
                         <h3 className="font-bold text-lg text-[#00247D]">Built for Accessibility</h3>
