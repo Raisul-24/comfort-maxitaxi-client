@@ -9,6 +9,7 @@ import AirportTransfer from './Pages/AirportTransfer.jsx';
 import BabyCapsule from './Pages/BabyCapsule.jsx';
 import WeddingTransport from './Pages/WeddingTransport.jsx';
 import WheelchairAccessible from './Pages/WheelchairAccessible.jsx';
+import ChooseUs from './Pages/ChooseUs.jsx';
  
 
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/wheelchair-accessible",
         element: <WheelchairAccessible />,
+      },
+      {
+        path: "/why-choose-us",
+        element: <ChooseUs />,
       }
     ]
   },
