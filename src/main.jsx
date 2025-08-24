@@ -10,6 +10,7 @@ import BabyCapsule from './Pages/BabyCapsule.jsx';
 import WeddingTransport from './Pages/WeddingTransport.jsx';
 import WheelchairAccessible from './Pages/WheelchairAccessible.jsx';
 import ChooseUs from './Pages/ChooseUs.jsx';
+import Contact from './Pages/Contact.jsx';
  
 
 const router = createBrowserRouter([
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/why-choose-us",
         element: <ChooseUs />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       }
     ]
   },
