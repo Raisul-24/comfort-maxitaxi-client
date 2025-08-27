@@ -99,7 +99,7 @@ const Testimonial = () => {
         >
           {testimonials.map((review, idx) => (
             <SwiperSlide key={idx}>
-              <div className="bg-white shadow-xl p-6 h-full flex flex-col justify-between mb-10">
+              <div className="bg-white shadow-xl rounded-xl p-6 h-full flex flex-col justify-between mb-10">
                 <div>
                   <div className="flex justify-between items-center mb-2">
                     <h3 className="font-semibold text-blue-950">{review.name}</h3>
