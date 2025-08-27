@@ -119,7 +119,7 @@ const Footer = () => {
       </footer>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 text-center py-4 text-red-600 text-xs md:text-sm">
+      <div className="border-t border-gray-700 text-center py-4 px-1 text-red-600 text-xs md:text-sm">
         Copyright © {new Date().getFullYear()} - All rights reserved by Comfort MaxiTaxi
       </div>
     </div>

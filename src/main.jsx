@@ -11,6 +11,8 @@ import WeddingTransport from './Pages/WeddingTransport.jsx';
 import WheelchairAccessible from './Pages/WheelchairAccessible.jsx';
 import ChooseUs from './Pages/ChooseUs.jsx';
 import Contact from './Pages/Contact.jsx';
+import Blog from './Pages/Blog.jsx';
+import TaxiFareCalculator from './Pages/TaxiFareCalculator.jsx';
  
 
 const router = createBrowserRouter([
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/taxiFareCalculator",
+        element: <TaxiFareCalculator />,
       }
     ]
   },
