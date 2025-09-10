@@ -119,7 +119,7 @@ const AirportTransfer = () => {
           <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg tracking-wide">
             Comfort MaxiTaxi – Perth Airport Transfers
           </h1>
-          <p className="mt-4 text-base md:text-lg leading-relaxed">
+          <p className="mt-4 text-xs md:text-lg leading-relaxed">
             Reliable, affordable, and stress-free airport pickups and drop-offs
             with{" "}
             <span className="text-[#FF0000] font-semibold">

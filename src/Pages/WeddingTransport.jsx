@@ -57,7 +57,7 @@ const WeddingTransport = () => {
                     <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg tracking-wide">
                         Maxi Taxi Perth – Wedding Transport Services
                     </h1>
-                    <p className="mt-4 text-base md:text-lg leading-relaxed">
+                    <p className="mt-4 text-xs md:text-lg leading-relaxed">
                         Organise transport for your guests between venues and enjoy the day knowing all transfers are taken care of. Affordable, reliable, and professional wedding transportation in Perth.
                     </p>
                 </div>

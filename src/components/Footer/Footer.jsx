@@ -27,12 +27,12 @@ const Footer = () => {
           <h3 className="font-bold md:mb-2">Company</h3>
           <ul className="space-y-1">
             <li>
-              <Link to="/about" className="hover:text-red-600 transition">
+              <Link to="/why-choose-us" className="hover:text-red-600 transition">
                 About us
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-red-600 transition">
+              <Link to="/contact" className="hover:text-red-600 transition">
                 Contact
               </Link>
             </li>
@@ -42,7 +42,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/blogs" className="hover:text-red-600 transition">
+              <Link to="/blog" className="hover:text-red-600 transition">
                 Blogs
               </Link>
             </li>
@@ -56,22 +56,22 @@ const Footer = () => {
           <h3 className="font-bold mb-2">Services</h3>
           <ul className="space-y-1">
             <li>
-              <Link to="/" className="hover:text-red-600 transition">
+              <Link to="/airport-transfer" className="hover:text-red-600 transition">
                 Airport Pickup
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-red-600 transition">
+              <Link to="/baby-capsule" className="hover:text-red-600 transition">
                 Baby Capsule
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-red-600 transition">
+              <Link to="/wedding-transport" className="hover:text-red-600 transition">
                 Wedding Transport
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-red-600 transition">
+              <Link to="/wheelchair-accessible" className="hover:text-red-600 transition">
                 Wheelchair Accessible
               </Link>
             </li>
@@ -87,11 +87,11 @@ const Footer = () => {
           </p>
           <p className="flex items-center gap-2 my-2">
             <MdOutlineMail className="text-red-500 flex-shrink-0" />
-            <span className="break-all">maxitaxi.perth@gmail.com</span>
+            <span className="break-all">perthcomfortmaxitaxi@gmail.com</span>
           </p>
           <p className="flex items-center gap-2">
             <FaPhone className="text-red-500 flex-shrink-0" /> 
-            <span>333 666 0000</span>
+            <span>+61 403 330 114</span>
           </p>
 
           <h4 className="font-bold mt-6">Follow Us</h4>

@@ -28,7 +28,7 @@ const WheelchairAccessible = () => {
                     <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg tracking-wide">
                         Maxi Taxi Perth – Wheelchair Accessible Taxis
                     </h1>
-                    <p className="mt-4 text-base md:text-lg leading-relaxed">
+                    <p className="mt-4 text-xs md:text-lg leading-relaxed">
                         Safe, reliable, and comfortable wheelchair taxi services across Perth.
                         Our vehicles are fully equipped to ensure accessible travel for all
                         passengers.

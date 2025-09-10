@@ -202,15 +202,15 @@ const BookingForm = () => {
         <div className="mt-6 flex flex-col md:flex-row justify-center items-center gap-6 text-blue-950 text-sm">
           <div className="flex items-center gap-2">
             <FaPhone className="text-lg text-blue-900" />
-            <span>+61 478 674 464</span>
+            <span>+61 403 330 114</span>
           </div>
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-lg text-blue-900" />
-            <span>info@maxitaxiperth.com.au</span>
+            <span>perthcomfortmaxitaxi@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <FaWhatsapp className="text-lg text-green-600" />
-            <span>+61 478 674 464</span>
+            <span>+61 403 330 114</span>
           </div>
         </div>
       </motion.form>
