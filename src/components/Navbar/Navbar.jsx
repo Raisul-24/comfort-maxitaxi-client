@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* Small device buttons */}
       <div className="flex md:hidden gap-x-2 md:gap-x-4 p-2 justify-center items-center">
         <btn 
-          onClick={() => window.location.href = "tel:+61478674464"}
+          onClick={() => window.location.href = "tel:+61403330114"}
           className="w-36 md:w-44 btn md:px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center md:gap-2 text-xs md:text-base"
         >
           <FaPhoneVolume />
@@ -155,7 +155,7 @@ const Navbar = () => {
         {/* Desktop Buttons */}
         <div className="hidden md:flex gap-3">
           <btn
-            onClick={() => window.location.href = "tel:+61478674464"}
+            onClick={() => window.location.href = "tel:+61403330114"}
             className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
           >
             <FaPhoneVolume />

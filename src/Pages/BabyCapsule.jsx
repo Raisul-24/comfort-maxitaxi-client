@@ -68,7 +68,7 @@ const BabyCapsuleTaxi = () => {
                     <h1 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg tracking-wide mb-4">
                         Maxi Taxi Perth – Baby Capsule & Child Seat Taxis
                     </h1>
-                    <p className="text-base md:text-lg leading-relaxed">
+                    <p className="text-xs md:text-lg leading-relaxed">
                         Travelling with a baby or toddler? We provide taxis fitted with government-approved baby capsules, toddler and booster seats for your child’s safety and comfort — all free of charge.
                     </p>
 
