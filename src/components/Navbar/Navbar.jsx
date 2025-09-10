@@ -55,7 +55,7 @@ const Navbar = () => {
           className="w-36 md:w-44 btn md:px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center md:gap-2 text-xs md:text-base"
         >
           <FaPhoneVolume />
-          <p>+61 478 674 464</p>
+          <p>+61 403 330 114</p>
         </btn>
         <btn
         onClick={scrollToBooking}
@@ -159,7 +159,7 @@ const Navbar = () => {
             className="w-44 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
           >
             <FaPhoneVolume />
-            <p>+61 478 674 464</p>
+            <p>+61 403 330 114</p>
           </btn>
           <btn 
             onClick={scrollToBooking}

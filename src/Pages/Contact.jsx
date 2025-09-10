@@ -71,7 +71,7 @@ const Contact = () => {
                             <div>
                                 <p className="text-sm text-gray-500">Call us (24/7)</p>
                                 <p className="text-lg font-bold text-blue-900">
-                                    +61 478 674 464
+                                    +61 403 330 114
                                 </p>
                             </div>
                         </div>
