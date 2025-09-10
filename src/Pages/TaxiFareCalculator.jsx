@@ -42,7 +42,7 @@ const TaxiFareCalculator = () => {
       {/* Info Section */}
       <div className="px-4 md:px-8 py-12 max-w-7xl mx-auto leading-relaxed text-gray-800 space-y-8">
         <h2 className="text-2xl font-bold text-blue-950 mb-3">Why Use Our Fare Estimator?</h2>
-        <p>
+        <p className="text-xs md:text-sm">
           We get many questions about our taxi prices and how much a taxi to Perth Airport costs.
           That’s why we’ve set up this page with information about our taxi fares.
           Use the calculator below to quickly get a taxi price quote — a good estimate of how much it will cost.
@@ -51,16 +51,16 @@ const TaxiFareCalculator = () => {
           <div className="w-full md:w-2/3 space-y-6">
             <div>
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Our Fleet</h3>
-              <p>
+              <p className="text-xs md:text-sm">
                 Despite our name, we have a large and diverse taxi fleet, not just maxi taxis:
               </p>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="text-xs md:text-sm list-disc list-inside space-y-2">
                 <li>Regular taxis (sedans & station wagons)</li>
                 <li>7-seater taxis</li>
                 <li>Maxi taxis (1–12 passengers)</li>
                 <li>Airport taxis, wheelchair taxis & taxis with baby seats</li>
               </ul>
-              <p className="mt-2">
+              <p className="text-xs md:text-sm mt-2">
                 Maxi taxis fit more people and can be more cost-effective for groups compared
                 to hiring two normal taxis. Select your preferred option in the calculator below.
               </p>
@@ -75,7 +75,7 @@ const TaxiFareCalculator = () => {
           <div>
             <div>
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Save More with Maxi Taxi Perth</h3>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="text-xs md:text-sm list-disc list-inside space-y-2">
                 <li><strong>No Call-Out Fee:</strong> Unlike other taxi companies that charge $1.50, we do NOT charge this fee.</li>
                 <li><strong>No Airport Surcharge:</strong> Save even more when traveling to/from Perth Airport.</li>
                 <li><strong>Flexible Pickup:</strong> You can be up to 10 minutes late, and we won’t start the meter.</li>
@@ -83,8 +83,8 @@ const TaxiFareCalculator = () => {
             </div>
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Choose Your Fare Style</h3>
-              <p>You have the flexibility to choose how your taxi fare is calculated:</p>
-              <ul className="list-disc list-inside space-y-2 mt-2">
+              <p className="text-xs md:text-sm">You have the flexibility to choose how your taxi fare is calculated:</p>
+              <ul className="text-xs md:text-sm list-disc list-inside space-y-2 mt-2">
                 <li><strong>Meter Price:</strong> Standard taxi meter rates apply.</li>
                 <li><strong>Set Price:</strong> Agree on a fixed price before your ride. No surprises even if there’s traffic, road closures, or delays.</li>
               </ul>
@@ -95,7 +95,7 @@ const TaxiFareCalculator = () => {
           <div>
             <div>
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Easy Payment Options</h3>
-              <ul className="list-disc list-inside space-y-1 text-gray-700">
+              <ul className="text-xs md:text-sm list-disc list-inside space-y-1 text-gray-700">
                 <li>We accept <strong>pre-payments over the phone</strong> for extra convenience.</li>
                 <li>Choose a <strong>set price</strong> and pay in advance — no hidden costs later.</li>
                 <li>Cash payments are also accepted if preferred.</li>
@@ -106,10 +106,10 @@ const TaxiFareCalculator = () => {
             {/* how to use */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">How to Use the Fare Calculator</h3>
-              <p>
+              <p className="text-xs md:text-sm">
                 Our fares are calculated using a simple formula with standard Perth taxi rates:
               </p>
-              <ul className="list-disc list-inside mt-2 space-y-1">
+              <ul className="text-xs md:text-sm list-disc list-inside mt-2 space-y-1">
                 <li>
                   For a <strong>1–4 Seater Car</strong>, multiply the distance by
                   <strong> $2.50 per km</strong>.
@@ -122,7 +122,7 @@ const TaxiFareCalculator = () => {
                   Add the <strong>flag fall charge of $6.10</strong> if applicable.
                 </li>
               </ul>
-              <p className="mt-2">
+              <p className="text-xs md:text-sm mt-2">
                 Or simply use our calculator below to get an instant fare estimate!
               </p>
             </div>
@@ -193,9 +193,37 @@ const TaxiFareCalculator = () => {
             {fare && (
               <p className="mt-4 text-lg font-semibold text-green-700">{fare}</p>
             )}
+            {/* Note below calculator */}
+            <p className="mt-10 text-xs md:text-sm text-gray-600 leading-relaxed">
+              Please note: This fare is an <span className="font-semibold">approximate estimate</span>
+              based on distance within Perth. Actual fares may vary slightly.
+              For a fixed set price or special bookings (weddings, events, airport transfers),
+              please <a href="tel:+61403330114" className="text-red-600 font-semibold underline">contact us directly</a>.
+            </p>
           </div>
         </div>
       </div>
+
+      {/* CTA */}
+      <div className="max-w-3xl mx-auto bg-white py-5">
+        <div className="bg-blue-50 rounded-2xl my-8 md:my-10 shadow-lg p-8 text-center">
+          <h3 className="text-xl md:text-2xl font-semibold mb-4">
+            Need a Custom Quote for Weddings or Events?
+          </h3>
+          <p className="mb-6 text-sm md:text-base">
+            For special bookings like <strong>weddings</strong>,{" "}
+            <strong>events</strong>, or <strong>long trips</strong>, call us
+            directly and we’ll tailor a price for you.
+          </p>
+          <a
+            href="tel:+61403330114"
+            className="w-44 px-4 py-2 border-2 border-blue-950 hover:border-red-500 hover:bg-blue-950 hover:text-white rounded-md bg-white text-blue-950 gap-2"
+          >
+            📞 Call for a Quote
+          </a>
+        </div>
+      </div>
+
       {/* Highlighted Features Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-10 grid md:grid-cols-3 gap-6">
         {/* No Call-Out Fee */}
@@ -228,25 +256,7 @@ const TaxiFareCalculator = () => {
         </div>
 
       </div>
-      {/* CTA */}
-      <div className="max-w-6xl mx-auto bg-white py-5">
-        <div className="bg-blue-50 rounded-2xl my-8 md:my-10 shadow-lg p-8 text-center">
-          <h3 className="text-xl md:text-2xl font-semibold mb-4">
-            Need a Custom Quote for Weddings or Events?
-          </h3>
-          <p className="mb-6 text-sm md:text-base">
-            For special bookings like <strong>weddings</strong>,{" "}
-            <strong>events</strong>, or <strong>long trips</strong>, call us
-            directly and we’ll tailor a price for you.
-          </p>
-          <a
-            href="tel:+61403330114"
-            className="w-44 px-4 py-2 border-2 border-blue-950 hover:border-red-500 hover:bg-blue-950 hover:text-white rounded-md bg-white text-blue-950 gap-2"
-          >
-            📞 Call for a Quote
-          </a>
-        </div>
-      </div>
+
     </div>
   );
 };
