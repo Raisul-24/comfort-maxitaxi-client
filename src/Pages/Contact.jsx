@@ -80,7 +80,7 @@ const Contact = () => {
                             <div>
                                 <p className="text-sm text-gray-500">Email</p>
                                 <p className="text-lg font-bold text-blue-900">
-                                    bookings@maxitaxiperth.com.au
+                                    perthcomfortmaxitaxi@gmail.com
                                 </p>
                             </div>
                         </div>
