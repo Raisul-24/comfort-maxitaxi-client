@@ -206,7 +206,7 @@ const BookingForm = () => {
           </div>
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-lg text-blue-900" />
-            <span>info@maxitaxiperth.com.au</span>
+            <span>perthcomfortmaxitaxi@gmail.com</span>
           </div>
           <div className="flex items-center gap-2">
             <FaWhatsapp className="text-lg text-green-600" />

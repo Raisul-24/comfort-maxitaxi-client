@@ -10,13 +10,13 @@ const Contact = () => {
     };
 
     return (
-        <div className="max-w-7xl mx-auto py-10 px-6 md:px-20">
+        <div className="max-w-7xl mx-auto py-12 px-6 md:px-20">
             {/* Why Choose Us */}
             <div className="text-center mb-12">
                 <h2 className="text-2xl md:text-4xl font-bold text-blue-900 mb-4">
                     Why Choose <span className="text-red-600">Maxi Taxi Perth</span>
                 </h2>
-                <p className="text-gray-600 text-center">
+                <p className="text-gray-600 max-w-4xl mx-auto">
                     Maxi Taxi Perth is not just a taxi company – we’re a group of highly
                     experienced, independent drivers across Greater Perth, united to deliver
                     premium customer service at standard taxi rates. Owned by{" "}
@@ -65,7 +65,7 @@ const Contact = () => {
                     </div>
 
                     {/* Right side: Contact Box */}
-                    <div className="bg-white rounded-xl shadow-md p-6 space-y-4">
+                    <div className="bg-white rounded-xl shadow-md p-6 space-y-6">
                         <div className="flex items-center space-x-3">
                             <FaPhoneAlt className="text-red-600 text-xl" />
                             <div>
@@ -101,11 +101,11 @@ const Contact = () => {
             </div>
 
             {/* Google Map Section */}
-            <div className="mt-12">
+            <div className="mt-16">
                 <h3 className="text-2xl md:text-3xl font-bold text-blue-900 text-center mb-6">
                     📍 Find Us in Perth
                 </h3>
-                <div className="w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg">
+                <div className="w-full h-[350px] md:h-[500px] rounded-2xl overflow-hidden shadow-lg">
                     <iframe
                         title="Maxi Taxi Perth Location"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.708444162672!2d115.85704731562771!3d-31.950527181232137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bad83f8d67f1%3A0x504f0b535df4f40!2sPerth%20WA%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
@@ -118,18 +118,17 @@ const Contact = () => {
                     ></iframe>
                 </div>
             </div>
-
             {/* Closing Statement */}
-            <div className="mt-10 text-center">
+            <div className="mt-12 text-center max-w-3xl mx-auto">
                 <h3 className="text-2xl font-bold text-blue-900 mb-4">
                     Experience the Difference
                 </h3>
                 <p className="text-gray-700">
                     Whether it’s a one-off trip, regular journey, or special group booking –
                     we’re confident you’ll be satisfied and choose us again. From airport
-                    transfers to family rides,
-                    <span className="text-red-600 font-semibold"> Maxi Taxi Perth </span>
-                    is your reliable, premium choice at standard taxi rates.
+                    transfers to family rides,{" "}
+                    <span className="text-red-600 font-semibold">Maxi Taxi Perth</span> is
+                    your reliable, premium choice at standard taxi rates.
                 </p>
             </div>
         </div>
