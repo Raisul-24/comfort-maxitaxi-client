@@ -220,7 +220,7 @@ const WheelchairAccessible = () => {
                             Inclusive, affordable, and always on time. Call us anytime and we’ll be there to make your journey easier.
                         </p>
                         <btn
-                            onClick={() => window.location.href = "tel:+61478674464"}
+                            onClick={() => window.location.href = "tel:+61403330114"}
                             className="w-60 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
                         >
                             <FaPhoneVolume />

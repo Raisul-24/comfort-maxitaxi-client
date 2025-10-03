@@ -351,11 +351,11 @@ const AirportTransfer = () => {
                   className="collapse collapse-arrow border border-base-300 mb-4 rounded-xl bg-white"
                 >
                   <input type="radio" name="faq-accordion" />
-                  <div className="collapse-title text-sm md:text-lg font-semibold text-[#00247D]">
+                  <div className="collapse-title text-sm md:text-base font-semibold text-[#00247D]">
                     {faq.q}
                   </div>
                   <div className="collapse-content">
-                    <p className="text-gray-700 text-sm">{faq.a}</p>
+                    <p className="text-gray-700 text-sm md:text-base">{faq.a}</p>
                   </div>
                 </div>
               ))}
@@ -369,12 +369,12 @@ const AirportTransfer = () => {
                   className="collapse collapse-arrow border border-base-300 mb-4 rounded-xl bg-white"
                 >
                   <input type="radio" name="airport-features-accordion" />
-                  <div className="collapse-title text-sm md:text-lg font-semibold text-[#00247D] flex items-center gap-2">
-                    <div className="text-lg">{item.icon}</div>
+                  <div className="collapse-title text-sm md:text-base font-semibold text-[#00247D] flex items-center gap-2">
+                    <div className="text-sm md:text-base ">{item.icon}</div>
                     {item.title}
                   </div>
                   <div className="collapse-content">
-                    <p className="text-gray-700 text-sm">{item.desc}</p>
+                    <p className="text-gray-700 text-sm md:text-base ">{item.desc}</p>
                   </div>
                 </div>
               ))}

@@ -143,7 +143,7 @@ const WeddingTransport = () => {
                 <h2 className="text-2xl md:text-3xl font-bold text-[#00247D] mb-6">
                     Why Choose Maxi Taxi Perth for Wedding Transport?       
                 </h2>
-                <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+                <p className="text-gray-700 text-sm md:text-base leading-relaxed">
                     We understand that your wedding day is one of the most important days of your life. That's why we offer a dedicated wedding transport service that ensures your guests travel safely, comfortably, and on time. Our professional drivers are trained to provide the highest level of service, making sure your wedding transport is as special as the day itself.</p>
             </div>
 
@@ -205,7 +205,7 @@ const WeddingTransport = () => {
                             Organise transport for your wedding guests with Maxi Taxi Perth and enjoy a stress-free day. Our professional drivers will ensure everyone travels safely, on time, and in style.
                         </p>
                         <btn
-                            onClick={() => window.location.href = "tel:+61478674464"}
+                            onClick={() => window.location.href = "tel:+61403330114"}
                             className="w-60 btn px-4 py-2 bg-blue-950 text-white rounded-md hover:bg-white hover:text-blue-950 flex items-center gap-2"
                         >
                             <FaPhoneVolume />
@@ -228,11 +228,11 @@ const WeddingTransport = () => {
                         {faqs.map((faq, i) => (
                             <div key={i} className="collapse collapse-arrow border border-base-300 mb-4 rounded-xl bg-white">
                                 <input type="radio" name="faq-accordion" />
-                                <div className="collapse-title text-sm md:text-lg font-semibold text-[#00247D]">
+                                <div className="collapse-title text-sm md:text-base font-semibold text-[#00247D]">
                                     {faq.q}
                                 </div>
                                 <div className="collapse-content">
-                                    <p className="text-gray-700 text-sm">{faq.a}</p>
+                                    <p className="text-gray-700 text-sm md:text-base">{faq.a}</p>
                                 </div>
                             </div>
                         ))}

@@ -7,7 +7,7 @@ const Services = () => {
             <h2 className='text-2xl md:text-4xl font-extrabold tracking-wide text-blue-950 text-center mb-8'>
                 Our Services
             </h2>
-            <p className='text-gray-700 text-sm md:text-base lg:text-lg leading-relaxed mb
+            <p className='text-gray-700 text-sm md:text-base leading-relaxed mb
                 -8'>
                 At Comfort Maxi Taxi, we offer a wide range of services to meet your transportation needs in Perth. Whether you need a ride to the airport, a comfortable vehicle for your family, or specialized transport for events, we have you covered. Our fleet includes maxi taxis, wheelchair accessible vehicles, and baby capsule-equipped cars to ensure a safe and pleasant journey for everyone.
             </p>
