@@ -5,7 +5,8 @@ import Footer from '../components/Footer/Footer';
 import Loader from '../Pages/Looder';
 import ScrollSmooth from '../components/ScrollSmooth';
 import BookingForm from '../components/BookingForm';
-import { FaWhatsapp } from "react-icons/fa"; // WhatsApp Icon
+import { FaWhatsapp } from "react-icons/fa";
+import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
     const [loading, setLoading] = useState(true);
@@ -28,10 +29,10 @@ const MainLayout = () => {
             <Outlet />
             <BookingForm />
             <Footer />
-
+            <Toaster />
             {/* WhatsApp Floating Button */}
             <a
-                href="https://wa.me/+61403330114" // Replace with your WhatsApp number
+                href="https://wa.me/+61403330114" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-xl hover:bg-green-600 transition-colors duration-300 z-50"
