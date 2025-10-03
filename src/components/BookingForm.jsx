@@ -4,19 +4,45 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaEnvelope, FaPhone, FaWhatsapp } from "react-icons/fa6";
+import emailjs from "emailjs-com";
+import toast from 'react-hot-toast';
 
 const BookingForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors, isSubmitting },
-    reset,
-  } = useForm();
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm();
+
+  // Generate unique booking ID
+  const generateBookingID = () => {
+    const now = Date.now();
+    const random = Math.floor(Math.random() * 1000);
+    return `MTX-${new Date().getFullYear()}-${now.toString().slice(-4)}${random}`;
+  };
 
   const onSubmit = async (data) => {
-    console.log("Form Data Submitted:", data);
-    alert("Your booking has been submitted successfully!");
-    reset();
+    data.bookingID = generateBookingID(); // Add booking ID
+
+    try {
+      // Send email to owner
+      await emailjs.send("service_5a3mmp8", "template_q1bbqid", data, "A08cnKvuEM9FjsaHQ");
+      // Send confirmation email to customer
+      await emailjs.send("service_5a3mmp8", "template_b07mh2r", data, "A08cnKvuEM9FjsaHQ");
+
+      // ✅ Success toast instead of alert
+      toast.success(`Booking sent! Reference ID: ${data.bookingID}`, {
+        duration: 5000,
+        position: 'top-right',
+      });
+
+      reset();
+
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      // ❌ Error toast instead of alert
+      toast.error("Failed to send booking. Please try again later.", {
+        duration: 5000,
+        position: 'top-right',
+      });
+    }
   };
 
   const inputClasses =
@@ -28,6 +54,7 @@ const BookingForm = () => {
       id="booking-form"
       className="relative flex justify-center items-center py-8 bg-[url('/images/taxi1.jpg')] min-h-screen bg-cover bg-center scroll-mt-24 px-2"
     >
+      
       <motion.form
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
